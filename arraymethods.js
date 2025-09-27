@@ -10,3 +10,26 @@ console.log(square) // [1, 4, 9, 16, 25]
 let numeral =[ 1,3,5,7,9,11, 13, 15, 17, 19]
 let cube = numeral.map((nume) => nume*nume*nume)
 console.log(cube)
+// home work
+// array.enteries, array.from, array.keys, array.find, array.findIndex, array.map
+// Array.entries
+const juice = ["lemonade", "Generade", "beetlejuice", "Magarita"];
+const keys = juice.keys();
+
+let text = "";
+for (let x of keys) {
+  text += x + "<br>";
+}
+
+// Array.find; baiscally return the first element that passes a test
+const num = [10, 27, 36, 49];
+let first = num.find(myFunction);
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+// Array.findIndex; returns the index of the first element that passes a test
+const number = [4, 9, 16, 25, 29];
+let firstIndex = number.findIndex(myFunction2); 
+
+

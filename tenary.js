@@ -6,4 +6,5 @@ if (age >= 18){
 }
 // tenary operator
 age = 9
-age >= 18 ? console.log("You can vote") : console.log("You cannot vote")
+age >= 18 ? console.log("You can vote") : console.log("You cannot vote") 
+// homework 
