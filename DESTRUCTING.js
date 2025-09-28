@@ -1,33 +1,30 @@
-/**
- * Examples of destructuring in JavaScript
- */
+
+ // Examples of destructuring in JavaScript
+ // the whole point of destructuring is to unpack values from arrays or properties from objects into distinct variables.
+ // this is just a simple way of combining 
 
 // Array Destructuring
-const numbers = [1, 2, 3, 4];
-const [first, second, ...rest] = numbers;
-console.log(first); // 1
-console.log(second); // 2
+const num = [1, 2, 3, 4];
+
+const [num1, num2, rest] = numbers;
+console.log(num1); // 1
+console.log(num2); // 2
 console.log(rest); // [3, 4]
 
 // Object Destructuring
-const user = {
-    name: "Alice",
-    age: 25,
-    city: "New York"
+const human = {
+    name: "Dave",
+    age: 15,
+    city: "Nepal"
 };
 
 const { name, age } = user;
-console.log(name); // Alice
-console.log(age); // 25
+console.log(name); 
+console.log(age); 
 
 // Destructuring with default values
-const { country = "USA" } = user;
-console.log(country); // USA
+const { country = "Bangledash" } = user;
+console.log(country); 
 
-// Function parameter destructuring
-function greet({ name, city }) {
-    console.log(`Hello, ${name} from ${city}!`);
-}
 
-greet(user); // Hello, Alice from New York!
    
